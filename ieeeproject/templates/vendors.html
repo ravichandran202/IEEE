@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+<title>IEEE | Login Page</title>
+{% endblock %}
+
+
+{% block csscode %}
+<style>
+.card-container{
+    text-align: center;
+}
+</style>
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center my-5">ExCom Members 2024</h1>
+    <div class="row cards-container">
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Navin-kumarAmrita.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr Navin Kumar</p>
+                <p class="fw-semibold pt-0 m-0">Chair</p>
+                <p>Profressor cum chair person</p>
+                <a href="{% url 'vendor_page' 1 %}" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Anish.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr Anish Cheriyan</p>
+                <p class="fw-semibold pt-0 m-0">Vice Chair</p>
+                <p>Vice President- Test</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/DivyaPhoto-Green.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Ms Divya MG</p>
+                <p class="fw-semibold pt-0 m-0">Secretary</p>
+                <p>Scientist F</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Ambar.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr Ambar Bajpai</p>
+                <p class="fw-semibold pt-0 m-0">Treasurer</p>
+                <p>Associate Professor</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/AmarCh.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr Amar Choudhary</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Assistant Professor</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/ananya-pic.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Ms Ananya Banik</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Senior Manager</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/binuJhon.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr Binu John</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Principal Architect</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Kavitha_passport.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr. Kavitha Kommuri</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Principal Engineer</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Lokesh.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr  Lokesh Babu Sarode</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Technologist, Quality Assurance Engineering</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Nayana-Reva.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr Nayana Hegde</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Assistant Professor</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Padmesh Sewda.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr Padmesh Sewda</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Program Manager</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Ravishankar.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr Ravishankar Holla</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Assistant Professor</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Ramesh.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr. Ramesh N</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Associate Professor, Dept of ECE</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/SanjeevKumar.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Dr. Sanjeevakumar M. Hatture</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Professor and Head, Dept. of ISE</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/SriKumarTVSM.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr Srikumar Aravinda Krishnan</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Sr. Lead Engineer</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/SubhraPrakashGiri.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr Subhra Prakash Giri</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Founder and CEO</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/SureshHarman.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr. Suresh Babu Sathiyakunar</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Senior Principal Engineer</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+        <div class="card-container col-12 col-md-4 col-xl-3">
+            <div class="card-content p-1 img-thumbnail mt-2">
+                <img src="{% static 'assets/Thiyagu-photo.jpg' %}" alt=""  style="border-radius: 50%; width:100px; height:100px">
+                <p class="fw-bold m-0">Mr. Thiyagu Gopal</p>
+                <p class="fw-semibold pt-0 m-0">Member</p>
+                <p>Senior Director</p>
+                <a href="" class="btn btn-primary w-100 btn-sm">View More</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+{% endblock body %}

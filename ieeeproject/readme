@@ -1,0 +1,47 @@
+# How to run Django Website
+
+To run the Django website locally, follow these steps:
+
+## Installation
+
+If you don't use Pipenv, you can install dependencies using:
+
+```
+pip install -r requirements.txt
+```
+
+## Now open Folder ieeeproject
+
+## Run the Development Server
+
+Start the development server using the command:
+
+```
+python manage.py runserver
+```
+
+The development server will start running at `http://localhost:8000`.
+
+## Accessing the Application
+
+You can access the application by navigating to [http://localhost:8000](http://localhost:8000) in your web browser.
+
+## Admin Interface
+
+To access the admin interface, log in with the superuser account you created earlier at [http://localhost:8000/admin](http://localhost:8000/admin).
+
+Enjoy exploring the Django website!
+
+-- Team member Details
+
+Name  : Ravichandran T S
+email : ravichandrants202@gmail.com
+phone : 9113971166
+
+Name  : Sri Ram A S
+email : sri810847@gmail.com
+phone : 7090559558
+
+Name  : B G Suhas
+email : bgsuhas2003@gmail.com
+phone : 9482407819

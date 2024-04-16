@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+<title>IEEE | Login Page</title>
+{% endblock %}
+
+
+{% block csscode %}
+<style>
+.teams img{
+    width: 150px;
+}
+</style>
+{% endblock %}
+
+
+{% block body %}
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-8">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">About</h1>
+                    <p class="lead fw-normal mb-4 text-justify" style="text-align: justify;">VTS Bangalore is approved and inaugurated in
+                        early 2020. Founding chair, Dr Navin Kumar initiated with full dedication to take the society
+                        forward with around 40 professional members and a couple of student members. With the support of
+                        volunteer and their efforts, as on 2023, VTS Bangalore has over 350 members out of which over
+                        200 is student member.</p><br>
+                    <p class="fw-bolder mb-3">About Bangalore Section</p>
+                    <p class="lead fw-normal mb-4" style="text-align: justify;">IEEE Bangalore Section was established in 1977 and is one
+                        of the most vibrant and dynamic IEEE Section across globe. Over the years the strength of the
+                        section has grown steadily and currently the Section membership stands more than 8600. This
+                        membership is spread across various sectors and is a nice blend of Industry, Academia and
+                        Research organizations…</p>
+                    <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- About section one-->
+<section class="py-0 bg-light" id="scroll-target">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0"
+                    src="{% static 'assets/photo1.jpg' %}" alt="..." />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Our founding</h2>
+                <p class="lead fw-normal text-muted mb-0">The fields of interest of the Society are the theoretical,
+                    experimental and operational aspects of electrical and electronics engineering in mobile radio,
+                    motor vehicles and land transportation.</p><br>
+                <ol class="lead fw-normal text-muted mb-4">
+                    <li>Mobile radio shall include all terrestrial mobile services.</li><br>
+                    <li> Motor vehicles shall include the components and systems and motive power for propulsion and
+                        auxiliary functions.</li><br>
+                    <li>Land transportation shall include the components and systems used in both automated and
+                        non-automated facets of ground transport technology.</li><br>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section two-->
+<section class="py-0">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" width="100%"
+                    src="{% static 'assets/photo2.jpg' %}" alt="..." />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">MISSION</h2>
+                <p class="lead fw-normal text-muted mb-0">The function of the Society is to promote its objectives
+                    through the leadership of its Officers and Members in encouraging the exchange of both technical and
+                    professional information among members of the Society, and other groups, societies, and chapters of
+                    the IEEE. This function is accomplished by means of:</p><br>
+                <ul class="lead fw-normal text-muted mb-4">
+                    <li>Sponsoring technical conferences and seminars</li><br>
+                    <li>Publication of technical journals and books</li><br>
+                    <li>Awards of recognition for excellence</li><br>
+                    <li>Participation in the development of standards</li><br>
+                    <li>Membership support activities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section three-->
+<section class="py-0">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                    src="{% static 'assets/photo3.jpg' %}" alt="..." />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">VISION</h2>
+                <p class="lead fw-normal text-muted mb-0"> Be the association of reference for VT professionals’ needs
+                    in the areas of life-long learning, standards creation, dissemination of new technologies and
+                    networking.</p><br>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team members section-->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="fw-bolder">Our team</h2>
+            <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
+        </div>
+        <div class="row teams">
+            <div class="">
+                <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle mb-4"
+                            src="{% static 'assets/Navin-kumarAmrita.jpg' %}"
+                            alt="..." />
+                        <h5 class="fw-bolder">Dr Navin Kumar</h5>
+                        <div class="fst-italic text-muted">Chair</div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="d-flex justify-content-center align-items-center pt-5">
+            <div class="col mb-5 mb-5 mb-xl-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4"
+                        src="{% static 'assets/Anish.jpg' %}" alt="..." />
+                    <h5 class="fw-bolder">Dr Anish Cheriyan</h5>
+                    <div class="fst-italic text-muted">Vice Chair</div>
+                </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-sm-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-2"
+                        src="{% static 'assets/DivyaPhoto-Green.jpg' %}"
+                        alt="..." />
+                    <h5 class="fw-bolder">Ms Divya MG</h5>
+                    <div class="fst-italic text-muted">Secretary</div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4"
+                        src="{% static 'assets/Ambar.jpg' %}" alt="..." />
+                    <h5 class="fw-bolder">Dr Ambar Bajpai</h5>
+                    <div class="fst-italic text-muted">Treasurer</div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

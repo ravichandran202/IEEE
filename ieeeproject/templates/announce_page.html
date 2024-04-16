@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+<title>IEEE | Login Page</title>
+{% endblock %}
+
+
+{% block csscode %}
+
+{% endblock %}
+
+
+{% block body %}
+<!-- Page content-->
+<section class="py-5">
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder">Announce Page</h1>
+                <p class="lead fw-normal text-muted mb-0">First step for success</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <form id="contactForm" action="{% url 'announce_page' %}" method="post">
+                        {% csrf_token %}
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="title" type="text" name="title" placeholder="name@example.com"
+                                data-sb-validations="required,title" required/>
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="content" type="content" name="content" placeholder="name@example.com"
+                                data-sb-validations="required,content" required></textarea>
+                            <label for="content">Content</label>
+                        </div>
+
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
